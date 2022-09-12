@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+int main (){
+	float nota[30];
+	int i;
+	
+	for(i=0;i<30;i++){
+		printf("Digite a nota do aluno\n");
+		scanf("%f", &nota[i]);
+		printf("A nota foi: %.2f\n", nota[i]);
+	}
+		
+}
