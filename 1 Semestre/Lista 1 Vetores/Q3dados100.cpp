@@ -1,20 +1,21 @@
 #include <stdio.h>
 #include <math.h>
 
-int main (){
+int main(){
 	
-	int i,soma,dado;
-	int dados[100];
+	int i,quant;
+	float dados[100];
+	float somatorio = 0;
 	
-	printf("Defina a quantidade de dados\n");
-	scanf("%d",&dado);
+	printf("Defina a quantidade de dados a serem lidos:\n");
+	scanf("%d", &quant);
 	
-	for(i=0;i<dado;i++){
-		printf("Digite o dado a ser somado:\n");
-		scanf("%d", &dados[i]);
-		printf("O dado foi: %d\n", dados[i]);
-	
-		soma=dados[i]+dados[i];
-		printf("A soma dos dados foi: %d\n", soma);
+	for(i=0; i<quant; i++){
+		printf("Escreva os dados a serem somados:\n");
+		scanf("%f",&dados[i]);
+		somatorio = somatorio + dados[i];
 	}
+	printf("A soma dos dados foi: %.2f", somatorio);
 }
+
+
