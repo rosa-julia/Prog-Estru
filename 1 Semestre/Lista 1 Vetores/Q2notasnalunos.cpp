@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 //2. Altere o algoritmo anterior considerando que não se conhece quantos alunos esta turma tem
-(menos que 50). O número de aluno será informado pelo usuário.
+//(menos que 50). O número de aluno será informado pelo usuário.
 int main (){
 	
 	int i, aluno;
