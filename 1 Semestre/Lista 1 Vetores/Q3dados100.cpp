@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <math.h>
+//3. Faça um algoritmo que calcule e escreva o somatório dos valores armazenados numa variável
+//composta unidimensional, chamada dados, de até 100 elementos numéricos a serem lidos.
 
 int main(){
 	
