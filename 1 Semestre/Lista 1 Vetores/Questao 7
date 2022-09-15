@@ -1,0 +1,47 @@
+//Desenvolva um algoritmo que cadastre os preços de até 100 diferentes CDs em uma loja. Após
+//este cadastro, o algoritmo deverá possibilitar a execução de uma de duas funções para aumento
+//dos preços cadastrados, sendo a primeira de 10% para todos os CDs, enquanto a segunda
+//aumenta o percentual informado pelo vendedor para todos os CDs. Será o vendedor que
+//escolherá o tipo de aumento desejado. Após os cálculos deverá ser apresentado o percentual de
+//aumento e, para cada CD, o valor sem aumento e o valor com aumento.
+
+#include <stdio.h>
+int main(){
+	double cd[5], cd10[5], cdx[5];
+	int i, x;
+	
+	
+	for (i=0; i<5; i++){
+		printf(" Digite o valor do CD:\n");
+		scanf("%lf", &cd[i]);			
+}
+
+	for (i=0; i<5; i++){
+		cd10[i] = cd[i] + cd[i] * 0.1;
+	
+	
+}
+
+	printf("Informe o percentual a ser aumentado no CD\n");
+	scanf("%d", &x);
+	
+	for (i=0; i<5; i++){	
+		cdx[i]= cd[i] + cd[i] * (x/100);
+	}
+
+	for (i=0; i<5; i++){
+		printf("\n Valor do CD: %.2lf\t", cd[i]);
+}
+
+	for (i=0; i<5; i++){
+		printf("\n Valor do CD com 10%% de taxa: %.2lf\t\n", cd10[i]);
+}
+
+	printf("\n Percentual %d", x);
+	for (i=0; i<5; i++){
+		printf("\n Valor do CD com o percentual escolhido:%.2lf \t\n", cdx[i]);
+}
+
+
+
+}
