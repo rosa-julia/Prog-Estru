@@ -14,7 +14,9 @@ int main (){
 	for(i=0;i<aluno;i++){
 		printf("Digite a nota do aluno\n");
 		scanf("%d", &nota[i]);
-		printf("A nota foi: %d\n", nota[i]);
-	}
 		
+	}
+	for(i=0;i<aluno;i++){
+	printf("A nota foi: %d\n", nota[i]);
+	}
 }
