@@ -1,0 +1,28 @@
+#include <stdio.h>
+//Passo a passo de como definir uma matriz e depois manipula-lo
+//Diferente do vetor, é necessário definir dois indices, um para as colunas e outro para as linhas.
+
+int main(){
+	int matriz[2][2];
+	int i /* linhas */, j /* colunas */;
+	
+	for(i = 0; i<2; i++){
+		for(j = 0; j<2; j++){
+			printf("Digite o numero desejado: [%d][%d]", i,j);
+			scanf("%d", &matriz [i] [j]); 
+			
+		}
+		
+	}
+	
+	//Apresenta os dados armazenados na matriz
+	for(i = 0; i<2; i++){
+		for(j = 0; j<2; j++){
+			printf("%d \t", matriz [i] [j]);
+ 
+			
+		}
+		
+	}
+	
+}
